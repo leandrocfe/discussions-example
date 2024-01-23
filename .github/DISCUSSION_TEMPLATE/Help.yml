@@ -1,10 +1,9 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: ""
 body:
   - type: markdown
     attributes:
-      value: |
-        This is text that will show up in the template!
+      label: Problem description
+      description: What happened when you experienced the problem?
   - type: textarea
     id: improvements
     attributes:
