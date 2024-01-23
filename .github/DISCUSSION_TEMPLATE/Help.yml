@@ -3,7 +3,7 @@ body:
     id: package
     attributes:
       label: Package
-      description: Select the specific package you need assistance with:
+      description: Select the specific package you need assistance with
       options:
         - Panel builder
         - Table builder
