@@ -1,56 +1,39 @@
 body:
-  - type: textarea
-    id: description
-    attributes:
-      label: Problem description
-      description: What happened when you experienced the problem?
-    validations:
-      required: true
-  - type: textarea
-    id: improvements
-    attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
   - type: dropdown
-    id: download
+    id: package
     attributes:
-      label: Which area of this project could be most improved?
+      label: Package
+      description: Which package are you experiencing the problem?
       options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+        - panel builder
+        - table builder
+        - form builder
+        - infolist builder
+        - actions
+        - notifications
+        - widgets
+        - Other
+      default: 1
     validations:
       required: true
-  - type: checkboxes
+  - type: input
+    id: package-version
     attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
+      label: Package Version
+      description: Please provide the full version of the package you have installed.
+      placeholder: v3.0.0
+    validations:
+      required: true
+  - type: input
+    id: reproduction
     attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      label: Reproduction repository (optional)
+      description: The URL of a public GitHub repository which reproduces the problem.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: If applicable, provide relevant log output. No need for backticks here.
+      render: shell
