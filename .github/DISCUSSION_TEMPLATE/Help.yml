@@ -1,4 +1,3 @@
-name: Help
 description: Report a problem you're experiencing
 body:
   - type: markdown
