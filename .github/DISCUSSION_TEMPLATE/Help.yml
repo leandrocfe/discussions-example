@@ -1,8 +1,11 @@
 body:
-  - type: markdown
+  - type: textarea
+    id: description
     attributes:
       label: Problem description
       description: What happened when you experienced the problem?
+    validations:
+      required: true
   - type: textarea
     id: improvements
     attributes:
