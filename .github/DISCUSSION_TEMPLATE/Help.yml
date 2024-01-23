@@ -3,7 +3,7 @@ body:
     id: package
     attributes:
       label: Package
-      description: Which package are you experiencing the problem?
+      description: Which package are you needing help?
       options:
         - Panel builder
         - Table builder
@@ -27,20 +27,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Problem description
-      description: What happened when you experienced the problem?
+      label: How can we help you?
+      description: What is happening? What you are trying to do? What you did? What is the issue/error?
     validations:
       required: true
-  - type: input
-    id: reproduction
-    attributes:
-      label: Reproduction repository (optional)
-      description: The URL of a public GitHub repository which reproduces the problem.
-    validations:
-      required: false
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
