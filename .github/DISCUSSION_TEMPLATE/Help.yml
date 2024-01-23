@@ -5,15 +5,15 @@ body:
       label: Package
       description: Which package are you experiencing the problem?
       options:
-        - panel builder
-        - table builder
-        - form builder
-        - infolist builder
-        - actions
-        - notifications
-        - widgets
+        - Panel builder
+        - Table builder
+        - Form builder
+        - Infolist builder
+        - Actions
+        - Notifications
+        - Widgets
         - Other
-      default: 1
+      default: 0
     validations:
       required: true
   - type: input
@@ -22,6 +22,13 @@ body:
       label: Package Version
       description: Please provide the full version of the package you have installed.
       placeholder: v3.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: What happened when you experienced the problem?
     validations:
       required: true
   - type: input
