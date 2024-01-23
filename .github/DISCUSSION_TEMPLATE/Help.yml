@@ -3,7 +3,7 @@ body:
     id: package
     attributes:
       label: Package
-      description: Which package are you needing help?
+      description: Select the specific package you need assistance with:
       options:
         - Panel builder
         - Table builder
@@ -20,7 +20,7 @@ body:
     id: package-version
     attributes:
       label: Package Version
-      description: Please provide the full version of the package you have installed.
+      description: Provide the full version number of the package you have installed (e.g., v3.0.0).
       placeholder: v3.0.0
     validations:
       required: true
@@ -28,6 +28,6 @@ body:
     id: description
     attributes:
       label: How can we help you?
-      description: What is happening? What you are trying to do? What you did? What is the issue/error?
+      description: Please provide detailed information about the issue you're experiencing. Include details such as what is happening, what you are trying to achieve, steps you've taken, and any error messages encountered.
     validations:
       required: true
